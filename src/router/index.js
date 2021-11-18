@@ -25,7 +25,7 @@ const routes = [
   {
     path: "/form",
     name: "Form",
-    commponent: Form,
+    component: Form,
     props: true,
   },
   {
