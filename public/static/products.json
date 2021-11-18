@@ -1,0 +1,49 @@
+{
+"products":[
+    {
+        "id": 1,
+        "title": "Book #1",
+        "description": "<strong>Fantastic book</strong> about scary monsters",
+        "price": 23000,
+        "availableInventory": 10,
+        "rating": 3,
+        "image": "static/images/book1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Book #2",
+        "description": "Description of 2 book",
+        "price": 20000,
+        "availableInventory": 7,
+        "rating": 5,
+        "image": "static/images/book2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Book #3",
+        "description": "Description of 3 book",
+        "price": 36500,
+        "availableInventory": 5,
+        "rating": 2,
+        "image": "static/images/book3.png"
+    },
+    {
+        "id": 4,
+        "title": "Book #4",
+        "description": "Description of 4 book",
+        "price": 15690,
+        "availableInventory": 12,
+        "rating": 4,
+        "image": "static/images/book4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Book #5",
+        "description": "Description of 5 book",
+        "price": 10690,
+        "availableInventory": 15,
+        "rating": 1,
+        "image": "static/images/book5.png"
+    }
+]   
+}
