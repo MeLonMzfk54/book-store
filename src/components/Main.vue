@@ -47,13 +47,16 @@
 </template>
 
 <script>
-import axios from "axios";
+//mixins
+import costFilter from './mixins/costFilter'
 import MyHeader from "./Header.vue";
+//mapGetters
+// import {mapGetters} from 'vuex';
 export default {
     name: "main",
+    mixins: [costFilter],
     data(){
         return{
-            products: {},
             cart: [],
         };
     },
@@ -67,7 +70,15 @@ export default {
         sortedProducts(){
             let productsArray = Array.from(this.products);
             return productsArray.sort(this.compare);
-        }
+        },
+        products(){
+            return this.$store.getters.products;
+        },
+
+        //mapGetters
+        // ...mapGetters([
+        //     'products',
+        // ])
     },
     methods: {
         compare(a, b){
@@ -115,10 +126,7 @@ export default {
         }
     },
     created: function(){
-        axios.get("/static/products.json").then(response =>{
-            this.products = response.data.products;
-            console.log(this.products);
-        })
+        this.$store.dispatch("initStore");
     }
 }
 </script>
